@@ -42,7 +42,7 @@ RUN cd ~ && git clone https://github.com/industio/PurPle-Pi-R1.git
 
 ENV PATH=/root/PurPle-Pi-R1/toolchain/gcc-arm-8.2-2018.08-x86_64-arm-linux-gnueabihf/bin:$PATH
 
-RUN cd ~/PurPle-Pi-R1 && ./Release_to_customer.sh -f nand -p ssd202 -m 128 -q fastboot
+RUN cd ~/PurPle-Pi-R1 && cd toolchain && source install_toolchain.sh && cd .. &&  ./Release_to_customer.sh -f nand -p ssd202 -m 128
 
 WORKDIR /root
 
