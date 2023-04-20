@@ -12,6 +12,8 @@ RUN apt-get update && \
     apt-get install -y \
     bc \
     git \
+    gcc \
+    g++ \
     zip \
     unzip \
     make \
@@ -24,6 +26,7 @@ RUN apt-get update && \
     python3-pexpect \
     libc6-dev-i386 \
     lib32z1 \
+    lsb-core \
     lib32ncurses5-dev \
     libncurses5-dev \
     libuuid1:i386 \
