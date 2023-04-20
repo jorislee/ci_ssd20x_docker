@@ -4,10 +4,11 @@ FROM ubuntu:20.04
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Shanghai
 
+SHELL ["/bin/bash", "-c"]
+
 # Install any needed packages specified in requirements.txt
 RUN apt-get update && dpkg --add-architecture i386
 
- 
 RUN apt-get update && \
     apt-get install -y \
     bc \
