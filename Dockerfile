@@ -5,7 +5,8 @@ ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Shanghai
 
 # Install any needed packages specified in requirements.txt
-RUN apt-get update && \
+RUN dpkg --add-architecture i386 &&
+    apt-get update && \
     apt-get install -y \
     bc \
     git \
