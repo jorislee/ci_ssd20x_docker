@@ -12,6 +12,7 @@ RUN apt-get update && dpkg --add-architecture i386
 RUN apt-get update && \
     apt-get install -y \
     bc \
+    vim \
     git \
     gcc \
     g++ \
