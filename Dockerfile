@@ -40,7 +40,7 @@ RUN apt-get update && \
     pkg-config && \
     apt-get clean
 
-RUN cd ~ && git clone https://github.com/industio/PurPle-Pi-R1.git
+RUN cd ~ && git clone https://github.com/jorislee/PurPle-Pi-R1.git
 
 ENV PATH=/root/PurPle-Pi-R1/toolchain/gcc-arm-8.2-2018.08-x86_64-arm-linux-gnueabihf/bin:$PATH
 
